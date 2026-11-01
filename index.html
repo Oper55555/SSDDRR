@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js" defer></script>
+
+    <title></title>
+</head>
+
+<body>
+    
+    <div id="START" class="DIV">
+        <h1 id="STARTtext">ㅋㅇㄱ게임</h1>
+        <div id="STARTBUTTON">
+            <button id="STARTBUTTONplay" data-target="READY">시작</button>
+            <button id="STARTBUTTONcollection">도감</button>
+        </div>
+    </div>
+
+    <div id="READY" class="DIV">
+        <h1 id="READYText">이름을 적어주세요</h1>
+        <input type="text" id="READYInput"></input>
+        <button id="READYButton">결정</button>
+    </div>
+
+    <div id="MAIN" class="DIV">
+        <h1 id="MAINtext"></h1>
+
+        <div id = "MAIN-DOWN-BUTTONS">
+            <button id="MAIN-D1" class="interaction">공부</button>
+            <button id="MAIN-D2" class="interaction">취미활동</button>
+            <button id="MAIN-D3" class="interaction">운동</button>
+            <button id="MAIN-D4" class="interaction">자유</button>
+        </div>
+        <div id = "MAIN-LEFT-BUTTONS">
+            <button id="MAIN-L1">기쁨</button>
+            <button id="MAIN-L2">키우기!</button>
+        </div>
+
+        <img src = "Image/Char/1.png" id = "CHARACTER">
+
+        <p id = "BubbleText_Text">안녕</p>
+        <p id = "Satus_Text">지능: 2, 신체능력: 2, 취미(X): 2, 인성: 2</p>
+    </div>
+
+    <div id="MAIN-STUDY" class="DIV">
+        <h1 id="STUDY-TEXT"> 공부!!</h1>
+        <h1 id="STUDY-PROBLEM"> nil </h1>
+        <input type ="text" id="STUDY-INPUT"></h1>
+        <button id="STUDY-BUTTON">제출</button>
+    </div>
+</body>
+</html>

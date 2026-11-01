@@ -1,0 +1,185 @@
+/*기본설정, 버튼의 경우 설정 하지 않을 시 자동으로 200x100 으로 계산*/
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+* {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+button {
+    position: relative;
+    appearance: none;
+
+    width: 200px;
+    height: 100px;
+    font-size: 50px;
+
+    background-color: white;
+    color: black;
+
+    transform: scale(1);
+    transform-origin: center;
+    transition: all 0.3s ease;
+
+    z-index: 1;
+}
+button:hover {
+    transform: scaleX(1.1);
+    background-color: rgb(233, 233, 233)
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: rgb(180, 180, 180)
+}
+
+/*시작화면*/
+
+#START {
+    padding-top: 350px;
+    box-sizing: border-box;
+
+    display: block;
+}
+
+#STARTtext {
+    width: 100%;
+    text-align: center;
+
+    font-size: 100px;
+}
+
+#STARTBUTTON {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+/*준비화면*/
+
+#READY {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    box-sizing: border-box;
+}
+
+#READYText {
+    width: 100%;
+    text-align: center;
+}
+
+#READYInput {
+    width: 800px;
+    height: 100px;
+
+    font-size: 50px;
+    text-align: center;
+
+}
+
+#READYButton {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 400px;
+    height: 50px;
+
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+#READY h1,
+#READY input,
+#READY button {
+    display: block;
+}
+
+/*인게임 화면*/
+
+#MAIN-DOWN-BUTTONS {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px 20px;
+
+    position: fixed;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+
+    box-sizing: border-box;
+}
+#MAIN-DOWN-BUTTONS button {
+    width: 400px;
+    height: 350;
+}
+
+#MAIN-LEFT-BUTTONS {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    position: fixed;
+    left: 30px;
+    top: 30px;
+}
+
+#BubbleText_Text {
+    text-align: center;
+
+    width: 950px;
+    height: 100px;
+    padding: 10px 20px;
+    font-size: 50px;
+
+    position: fixed;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+#Satus_Text {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    font-size: 35px;
+
+    white-space: nowrap;
+
+    transform: translateX(-50%);
+}
+
+
+#CHARACTER {
+    position: fixed;
+    width: 500px;
+    height: auto;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+}
+
+#MAINtext {
+    position: fixed;
+
+    left: 50%;
+    top: 5%;
+
+    transform: translate(-50%, -50%);
+}
